@@ -6,6 +6,7 @@ html {
 .flex-container {
   display: flex;
   align-items: center;
+
 }
 
 
@@ -13,7 +14,18 @@ main {
   position: relative;
   top: 64px;
 }
-
+main h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+}
+main h2 {
+  color: dimgrey;
+  font-size: 1.5rem;
+}
+p {
+  color: grey;
+}
 /* header  */
 
 header {
@@ -54,12 +66,18 @@ header nav ul li {
 
 #first {
   background-color: lightgrey;
-  display: inline-block;
+  width: 100%;
 }
-#first img  {
+#first .img  {
   width: 60%;
+}
+#first img{
+  max-width: 100%;
   margin: 32px 24px;
 }
+
+/* since "message" contains three items, I set the flex property with other properties which
+ are not defined in the universal style for a flex container */
 #first .message {
   display: flex;
   flex-direction: column;
@@ -69,19 +87,80 @@ header nav ul li {
   align-items: center;
 
 }
-#first  h1{
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: rgb(80, 80, 80);
-}
-#first  h2 {
-  color: dimgrey;
-  font-size: 1.5rem;
-}
+
 #first .button {
   background-color: rgb(80, 80, 80);
   padding: 0.5rem 5rem;
   width: 100px;
   color: white;
+}
+/* Now the #second section: */
+/* Using the same logic as before, I specify some flex-properties to the left container of the second section */
+#left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+#left img{
+  max-width: 100%;
+  margin: 32px 24px;
+}
+
+ #left h1 {
+  margin: 0px 24px 32px 32px;
+}
+#left p {
+  margin: 0px 24px 32px 32px;
+}
+#left {
+  border-right: thin solid lightgrey;
+}
+#right {
+  width: 40%;
 
 }
+.info {
+  display: flex;
+  align-items: center;
+}
+#right .img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+}
+#right img {
+  max-width: 100%;
+}
+#right .message {
+  width: 65%;
+}
+.message h2{
+  margin-bottom: 8px;
+}
+.message p{
+  margin-bottom: 8px;
+}
+.message a {
+  margin-bottom: 8px;
+  color: DARKTURQUOISE;
+}
+#right .date {
+  border-bottom: medium solid lightgrey;
+}
+#right .lecture {
+  background-color: lightgrey;
+}
+/* #right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+#right .img {
+  height: 35%;
+  width: auto;
+}
+.info {
+  display: flex;
+
+
+} */
