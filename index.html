@@ -25,7 +25,7 @@
 
   <main>
     <!-- The first section structure is basically a flex container with two children: an image and a message, each contained in a div.
-  The message div is also a flex container, with 3 items  -->
+    The message div is also a flex container, with 3 items  -->
     <section id="first">
       <div class="flex-container">
         <div class="img">
@@ -41,10 +41,10 @@
 
       </div>
     </section>
-<!-- The second section structure is:
--The left box which has an image with text below it.
--The right box, which has 3 sub-containers, each with an image with text next to it. I use divs for those images and text
-A global container contains the two previous containers (besides the <section> tag, which I understand is only for legibility purposes) -->
+    <!-- The second section structure is:
+    -The left box which has an image with text below it.
+    -The right box, which has 3 sub-containers, each with an image with text next to it. I use divs for those images and text
+    A global container contains the two previous containers (besides the <section> tag, which I understand is only for legibility purposes) -->
     <section id="second">
       <div class="flex-container">
         <div id="left" >
@@ -55,42 +55,120 @@ A global container contains the two previous containers (besides the <section> t
         </div>
         <div id="right">
 
-            <div class="info date">
-              <div class="img">
-                <img src="./css/media/images/information-orientation.jpg" alt="">
-              </div>
-              <div class="message">
-                <h2>Orientation date</h2>
-                <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                <a href="#">Read more</a>
-              </div>
+          <div class="info date">
+            <div class="img">
+              <img src="./css/media/images/information-orientation.jpg" alt="">
             </div>
-
-            <div class="info campus">
-              <div class="img">
-                <img src="./css/media/images/information-campus.jpg" alt="">
-              </div>
-              <div class="message">
-                <h2>Our campus</h2>
-                <p>ind which campus is close by you</p>
-                <a href="#">Read more</a>
-              </div>
+            <div class="message">
+              <h2>Orientation date</h2>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <a href="#">Read more</a>
             </div>
+          </div>
 
-            <div class="info lecture">
-              <div class="img">
-                <img src="./css/media/images/information-guest-lecture.jpg" alt="">
-              </div>
-              <div class="message">
-                <h2>Our guest lecture</h2>
-                <p>Join a keynote with Oliver Stone about music in medical treatment</p>
-                <a href="#">Read more</a>
-              </div>
+          <div class="info campus">
+            <div class="img">
+              <img src="./css/media/images/information-campus.jpg" alt="">
             </div>
+            <div class="message">
+              <h2>Our campus</h2>
+              <p>ind which campus is close by you</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
 
+          <div class="info lecture">
+            <div class="img">
+              <img src="./css/media/images/information-guest-lecture.jpg" alt="">
+            </div>
+            <div class="message">
+              <h2>Our guest lecture</h2>
+              <p>Join a keynote with Oliver Stone about music in medical treatment</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+<!-- The 3rd section structure is:
+ -A main box that contains an h1 and a div
+    - The div containing the 6 boxes with the products information
+        -Each product box is made of one div for the img and one for the text. -->
+    <section id="third">
+      <div class="main-box">
+        <h1> Start learning </h1>
+        <div class="products-container">
+          <div class="products">
+            <div class="img">
+              <img src="./css/media/images/course-software.jpg" alt="">
+            </div>
+            <div class="message">
+              <h2> Sofware engineering </h2>
+              <p> COURSES </p>
+              <p id="description">  Web development, mobile development, iOT, APIs.   </p>
+            </div>
+          </div>
+
+          <div class="products">
+            <div class="img">
+              <img src="./css/media/images/course-computer-art.jpg" alt="">
+            </div>
+            <div class="message">
+              <h2> Computer art  </h2>
+              <p> COURSES </p>
+              <p id="description">  Imaging & Design, Web Design , Motion Graphics & Visual Effects...</p>
+            </div>
+          </div>
+
+          <div class="products">
+            <div class="img">
+              <img src="./css/media/images/course-design.jpg" alt="">
+            </div>
+            <div class="message">
+              <h2>Design  </h2>
+              <p> COURSES </p>
+              <p id="description"> User Experience Design, User Research, Visual Design </p>
+            </div>
+          </div>
+
+          <div class="products">
+            <div class="img">
+              <img src="./css/media/images/course-data.jpg" alt="">
+            </div>
+            <div class="message">
+              <h2> Data  </h2>
+              <p> COURSES </p>
+              <p id="description"> Data Science, Big Data, SQL, Data Visualization </p>
+            </div>
+          </div>
+
+          <div class="products">
+            <div class="img">
+              <img src="./css/media/images/course-business.jpg" alt="">
+            </div>
+            <div class="message">
+              <h2> Business  </h2>
+              <p> COURSES </p>
+              <p id="description"> Product Development, Business Development, Startup </p>
+            </div>
+          </div>
+
+          <div class="products">
+            <div class="img">
+              <img src="./css/media/images/course-marketing.jpg" alt="">
+            </div>
+            <div class="message">
+              <h2> Marketing  </h2>
+              <p> COURSES </p>
+              <p id="description"> Analytics, Content Marketing, Mobile Marketing </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
   </main>
 
 
