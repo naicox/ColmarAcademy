@@ -21,12 +21,20 @@
         <li>Sign in</li>
       </ul>
     </nav>
+    <nav class="mobile">
+      <ul class="flex-container">
+        <li> <img src="./css/media/images/ic-logo.svg" alt=""> </li>
+        <li> <img src="./css/media/images/ic-on-campus.svg" alt=""> </li>
+        <li> <img src="./css/media/images/ic-online.svg" alt=""> </li>
+        <li> <img src="./css/media/images/ic-login.svg" alt=""> </li>
+      </ul>
+    </nav>
   </header>
 
   <main>
     <!-- The first section structure is basically a flex container with two children: an image and a message, each contained in a div.
     The message div is also a flex container, with 3 items  -->
-    <section id="first">
+    <section class="first">
       <div class="flex-container">
         <div class="img">
           <img src="./css/media/images/banner.jpg" alt="">
@@ -45,19 +53,20 @@
     -The left box which has an image with text below it.
     -The right box, which has 3 sub-containers, each with an image with text next to it. I use divs for those images and text
     A global container contains the two previous containers (besides the <section> tag, which I understand is only for legibility purposes) -->
-    <section id="second">
+    <section class="second">
       <div class="flex-container">
-        <div id="left" >
+        <div class="left" id="border">
           <img src="./css/media/images/information-main.jpg" alt="">
           <h1>It doesn´t hurt to keep practicing</h1>
           <p>"Gareth Bale no atraviesa sus días más felices en el Real Madrid. El galés fue suplente en Butarque y jugó únicamente... 10 minutos. Otro palo para el futbolista galés, que ve cómo poco a poco se va  alejando del equipo blanco."</p>
           <p class="author">Emanuel, at marca.com</p>
         </div>
-        <div id="right">
+        <div class="right">
 
           <div class="info date">
             <div class="img">
-              <img src="./css/media/images/information-orientation.jpg" alt="">
+              <img class="desktop"  src="./css/media/images/information-orientation.jpg" alt="">
+              <img class="mobile"  src="./css/media/images/information-orientation-mobile.jpg" alt="">
             </div>
             <div class="message">
               <h2>Orientation date</h2>
@@ -68,7 +77,8 @@
 
           <div class="info campus">
             <div class="img">
-              <img src="./css/media/images/information-campus.jpg" alt="">
+              <img class="desktop" src="./css/media/images/information-campus.jpg" alt="">
+              <img class="mobile" src="./css/media/images/information-campus-mobile.jpg" alt="">
             </div>
             <div class="message">
               <h2>Our campus</h2>
@@ -79,7 +89,8 @@
 
           <div class="info lecture">
             <div class="img">
-              <img src="./css/media/images/information-guest-lecture.jpg" alt="">
+              <img class="desktop" src="./css/media/images/information-guest-lecture.jpg" alt="">
+              <img class="mobile" src="./css/media/images/information-guest-lecture-mobile.jpg" alt="">
             </div>
             <div class="message">
               <h2>Our guest lecture</h2>
@@ -90,11 +101,11 @@
         </div>
       </div>
     </section>
-<!-- The 3rd section structure is:
- -A main box that contains an h1 and a div
+    <!-- The 3rd section structure is:
+    -A main box that contains an h1 and a div
     - The div containing the 6 boxes with the products information
-        -Each product box is made of one div for the img and one for the text. -->
-    <section id="third">
+    -Each product box is made of one div for the img and one for the text. -->
+    <section class="third">
       <div class="main-box">
         <h1> Start learning </h1>
         <div class="products-container">
@@ -165,16 +176,64 @@
           </div>
         </div>
       </div>
-
     </section>
 
+    <section class="fourth">
+      <div class="main-box">
+        <h1>Thesis exhibit</h1>
+        <div class="flex-container">
+          <div class="left">
+            <div class="vid">
+              <video>
+                <source src="./css/media/videos/thesis.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="message">
+                <h2>Reimagine urban</h2>
+                <p>Por lo demás, Pep dejó claro que espera la misma intensidad en este nuevo choque contra los Spurs en Premier. Estos son los mensajes que lanzó el entrenador citizen: Es triste, pero debemos aceptar la derrota. Yo soy del VAR, alomejor otros no eran del VAR y a partir de hoy sí lo son. </p>
+              </div>
+            </div>
+            <div class="right">
+              <div class="info fisma">
+                <div class="img">
+                  <img src="./css/media/images/thesis-fisma.jpg" alt="">
+                </div>
+                <div class="message">
+                  <h2>Fisma: Design and prototype</h2>
+                  <p>Designer showcase of new prototype product</p>
+                </div>
 
-  </main>
+
+              </div>
+              <div class="info NY">
+                <div class="img">
+                  <img src="./css/media/images/thesis-now-and-then.jpg" alt="">
+                </div>
+                <div class="message">
+                  <h2>Now and then</h2>
+                  <p>Research study about New York</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer">
+          <div class="copyright">
+            <p>© 2016 Colmar Academy: All rights reserved</p>
+          </div>
+          <nav>
+            <ul>
+              <li>Terms</li>
+              <li>Privacy</li>
+            </ul>
+          </nav>
+      </div>
+    </main>
 
 
 
 
-
-
-</body>
-</html>
+  </body>
+  </html>
